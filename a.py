@@ -70,7 +70,9 @@ while buy == 1:
     
     if ac == 2:
         buy = 67
+
         print("    ")
+        break
 
     if ac == 1:
         for index, item in enumerate(items):
