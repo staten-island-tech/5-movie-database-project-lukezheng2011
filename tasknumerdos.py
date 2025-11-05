@@ -6,3 +6,14 @@ data = json.load(movies)
 
 for index, item in enumerate(data):
     print(index, ":", item["title"])
+
+
+
+yr = int(input)
+
+
+
+
+
+
+#After accepting user input, print all movies that released AFTER a given year.

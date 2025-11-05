@@ -68,13 +68,12 @@ while buy == 1:
 
         
     
-    if ac == 2:
+    elif ac == 2:
         buy = 67
 
         print("    ")
         break
-
-    if ac == 1:
+    elif ac == 1:
         for index, item in enumerate(items):
             print(index, ":", item["name"])
         print("  ")
@@ -87,6 +86,9 @@ while buy == 1:
         print(f"Your total is {exact}")
         print(f"You've bought {bought}")
         print("    ")
+        ac = int(input("Enter 1 to continue purchasing, enter 2 to check out, enter 3 to remove an item from your cart: "))
+    else:
+        print("  ")
         ac = int(input("Enter 1 to continue purchasing, enter 2 to check out, enter 3 to remove an item from your cart: "))
 
 
