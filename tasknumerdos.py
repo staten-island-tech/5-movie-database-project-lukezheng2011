@@ -5,11 +5,12 @@ movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
 
 for index, item in enumerate(data):
-    print(index, ":", item["title"])
+    yr = int(input("Which year would you like to see the movies released after: "))
 
 
 
-yr = int(input)
+print(data[yr]["title"])
+
 
 
 
