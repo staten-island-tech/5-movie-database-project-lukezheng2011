@@ -6,7 +6,7 @@ data = json.load(movies)
 
 #for index, item in enumerate(data)
 
-yr = int(input("Which year would you like to see the movies released after: "))
+yr = input("Which year would you like to see the movies released after: ")
 
 
 for i in range(2026):
