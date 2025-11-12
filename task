@@ -6,25 +6,17 @@ data = json.load(movies)
 
 #for index, item in enumerate(data)
 
-yr = int(input("Which year would you like to see the movies released after: "))
-
+yearA = int(input("Which year would you like to see the movies released after: "))
+yearB = int(input("Which year would you like to see the movies released before: "))
 
 
 for index, item in enumerate(data):    
-    if item["year"] > yr:
+    if item["year"] > yearA 
         print(item["title"])
 
 
 
 
-# for i in range(2026):2
-#     if i >= yr:
-#         print(data[i]["title"])
 
 
 
-
-
-
-
-#After accepting user input, print all movies that released AFTER a given year.

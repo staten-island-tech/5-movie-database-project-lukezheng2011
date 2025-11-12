@@ -4,11 +4,15 @@ movies = open("./movies.json", encoding="utf8")
 ## create variable "data" that represents the enitre movie list
 data = json.load(movies)
 
+#for index, item in enumerate(data)
+
+yearA = int(input("Which year would you like to see the movies released after: "))
+yearB = int(input("Which year would you like to see the movies released before: "))
 
 
-
-
-
+for index, item in enumerate(data):    
+    if item["year"] > yearA and item["year"] < yearB:
+        print(item["title"])
 
 
 
