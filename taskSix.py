@@ -6,18 +6,17 @@ data = json.load(movies)
 
 #for index, item in enumerate(data)
 
-year = int(input("Which year would you like to see the movies released in: "))
+genreInput = input("What is the genre: ")
+
+
+for movie in data:
+    for item in movie["genres"]:
+        if item == genreInput:
+            print(movie["title"])
 
 
 
-for index, item in enumerate(data):    
-    if item["year"] > yearA 
-        print(item["title"])
 
 
 
 
-
-
-
-67

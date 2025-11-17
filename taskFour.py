@@ -1,0 +1,22 @@
+import json
+## Open the JSON file of movie data
+movies = open("./movies.json", encoding="utf8")
+## create variable "data" that represents the enitre movie list
+data = json.load(movies)
+
+#for index, item in enumerate(data)
+
+yearA = int(input("Which year would you like to see the movies released during: "))
+
+
+
+for index, item in enumerate(data):    
+    if item["year"] == yearA:
+        print(item["title"])
+
+
+
+
+
+
+
