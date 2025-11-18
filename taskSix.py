@@ -8,7 +8,6 @@ data = json.load(movies)
 
 genreInput = input("What is the genre: ")
 
-
 for movie in data:
     for item in movie["genres"]:
         if item == genreInput:
