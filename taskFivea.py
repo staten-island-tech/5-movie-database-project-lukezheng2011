@@ -6,12 +6,12 @@ data = json.load(movies)
 
 #for index, item in enumerate(data)
 
-titleInput = input("What is the movie name: ")
+stupidWilliam = input("What is the movie name: ")
 
 
 
 for index, item in enumerate(data):    
-    if item["title"] == titleInput:
+    if stupidWilliam in item["title"]:
         print(item["title"])
 
 
